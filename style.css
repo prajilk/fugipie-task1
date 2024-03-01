@@ -1,0 +1,29 @@
+.gradient-text {
+    background: -webkit-linear-gradient(
+        /* rgba(38, 166, 161, 0.6),
+        rgb(38, 166, 161) */ #79d7a5,
+        #48a693
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tag-chap {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 3.5rem;
+    border-radius: 100%;
+}
+.tag-chap::after {
+    content: "";
+    position: absolute;
+    width: 3.5rem;
+    height: 2px;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tag-chap-2 {
+}

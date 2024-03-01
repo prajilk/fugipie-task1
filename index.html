@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- Tailwind CSS (a css framework) CDN for styling -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+
+        <!-- Font awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body style="font-family: 'SF Pro Display', sans-serif;">
+        <!-- Navbar section -->
+        <nav class="container mx-auto px-4 md:px-10 py-4 flex justify-between items-center">
+            <h1 style="font-family: 'Montserrat', sans-serif;"
+                class="text-[#7EBEA1] text-2xl md:text-3xl font-semibold cursor-pointer">Golphin
+            </h1>
+            <!-- Menu for Small devices -->
+            <button class="md:hidden flex">
+                <img src="assets/hamburger-menu.png" alt="Menu Icon">
+            </button>
+
+            <!-- Menu for Large devices -->
+            <div class="items-center gap-3 hidden md:flex">
+                <div>
+                    <span class="cursor-pointer">Support</span>
+                    <i class="fa-solid fa-chevron-down fa-2xs"></i>
+                </div>
+                <div class="border h-full border-gray-300"></div>
+                <button class="active:scale-95 duration-300">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero section -->
+        <header class="grid md:grid-cols-2 container mx-auto px-4 py-10 md:px-10 md:py-20"
+            style="background: rgb(241,241,241); background: linear-gradient(45deg, rgba(241,241,241,1) 0%, rgba(255,255,255,1) 100%);">
+            <div class="order-2 md:order-1">
+                <h1 class="text-4xl text-center mt-7 md:text-6xl max-w-md mb-7 md:mt-0 md:text-left font-semibold">
+                    Dui aliquet luctus non
+                    <span class="gradient-text">Pulvinar
+                        cras.</span>
+                </h1>
+                <div class="flex justify-center md:justify-start">
+                    <button
+                        class="bg-[#7DDBA6] border-2 border-[#B7F4BE] text-white px-5 py-2 rounded-full active:scale-95 duration-300">Know
+                        more</button>
+                </div>
+            </div>
+            <img src="./assets/vr-glass-icon.png" alt="VR Glass icon" class="md:order-2">
+        </header>
+
+        <!-- Features section -->
+        <section class="container mx-auto px-4 md:px-10 py-8">
+            <h2 class="text-3xl md:text-5xl font-semibold text-center">Features we <span
+                    class="gradient-text">Provide</span>
+            </h2>
+            <p class="max-w-4xl mt-5 mx-auto text-center">Goalphin is loren-Ipsum Lorem ipsum dolor sit amet,
+                consectetur
+                adipiscing
+                elit.
+                Duis
+                faucibus vitae orci
+                quis
+                ullamcorper. Vivamus magna sem, iaculis nec velit id.</p>
+
+            <div class="grid md:grid-cols-3 mt-10 max-w-3xl mx-auto gap-14">
+                <div class="mx-auto space-y-2 w-full">
+                    <div class="w-full border-4 border-[#00000033] rounded-xl px-5 py-14">
+                        <img src="assets/vr-icon.png" alt="VR Icon" class="w-full aspect-square object-contain">
+                    </div>
+                    <p>Goalphin <span class="gradient-text">Metaversity</span></p>
+                </div>
+                <div class="mx-auto space-y-2 w-full">
+                    <div class="w-full border-4 border-[#00000033] rounded-xl px-5 py-14">
+                        <img src="assets/graduation hat-icon.png" alt="Graduation Hat icon"
+                            class="w-full aspect-square object-contain">
+                    </div>
+                    <p>Goalphin <span class="gradient-text">Courses</span></p>
+                </div>
+                <div class="mx-auto space-y-2 w-full">
+                    <div class="w-full border-4 border-[#00000033] rounded-xl px-5 py-14">
+                        <img src="assets/teacher-icon.png" alt="Teacher Icon"
+                            class="w-full aspect-square object-contain">
+                    </div>
+                    <p>Goalphin <span class="gradient-text">Bootcamps</span></p>
+                </div>
+            </div>
+
+            <p class="max-w-4xl mt-10 mx-auto text-center">Goalphin is loren-Ipsum Lorem ipsum dolor sit amet,
+                consectetur
+                adipiscing
+                elit.
+                Duis
+                faucibus vitae orci
+                quis
+                ullamcorper. Vivamus magna sem, iaculis nec velit id.</p>
+
+        </section>
+
+        <!-- Divider -->
+        <div class="max-w-6xl mx-auto px-4 md:px-10 my-10">
+            <hr class="border">
+        </div>
+
+        <!-- Main section -->
+        <section class="max-w-6xl mx-auto px-4 md:px-20 space-y-24">
+            <!-- Slide one -->
+            <div class="grid md:grid-cols-2">
+                <div class="self-center place-self-end order-2 md:order-1">
+                    <h3 class="text-5xl font-semibold hidden md:block"><span class="gradient-text">Meta</span>versity
+                    </h3>
+                    <p class="max-w-lg flex mt-3 mb-10 text-center md:text-left">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Lectus
+                        scelerisque
+                        amet, fermentum
+                        tellus pellentesque metus,
+                        eleifend. Ullamcorper interdum tellus turpis aliquam amet sit posuere. Ullamcorper nec risus nec
+                        at. Mauris, amet,
+                        quisque risus, tellus. Nisl, nullam sit id malesuada amet, ultrices odio. to Nunc laoreet
+                        vulputate at enim.</p>
+
+                    <!-- Slide indicator for Small screens -->
+                    <div class="flex md:hidden justify-center gap-3">
+                        <div class="w-14 h-0.5 bg-[#48A693]">
+                        </div>
+                        <div class="w-14 h-0.5 bg-[#E1E1E1]">
+                        </div>
+                        <div class="w-14 h-0.5 bg-[#E1E1E1]">
+                        </div>
+                        <div class="w-14 h-0.5 bg-[#E1E1E1]">
+                        </div>
+                    </div>
+
+                    <!-- Slide indicator for Large screens -->
+                    <div class="hidden md:flex">
+                        <div class="tag-chap bg-gradient-to-t from-[#48A693] to-[#79D7A5] after:bg-[#e1e1e1]">
+                        </div>
+                        <div class="tag-chap bg-[#E1E1E1] after:bg-[#e1e1e1]">
+                        </div>
+                        <div class="tag-chap bg-[#E1E1E1] after:bg-[#e1e1e1]">
+                        </div>
+                        <div class="size-5 me-14 bg-[#E1E1E1] rounded-full">
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <h3 class="text-3xl font-semibold md:hidden text-center"><span
+                            class="gradient-text">Meta</span>versity
+                    </h3>
+                    <img src="assets/White vr glass-icon.png" alt="White VR Glass Icon" class="size-96 mx-auto">
+                </div>
+            </div>
+
+            <!-- Slide two -->
+            <div class="grid md:grid-cols-2">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-3xl font-semibold md:hidden text-center">Goalphin <span
+                            class="gradient-text">Course</span></h3>
+                    <img src="assets/books and graduation hat-obj.png" alt="Books and graduation hat icon"
+                        class="size-96 mx-auto hidden md:block">
+                    <img src="assets/Graduation hat-icon-2.png" alt="Graduation Hat icon" class="mx-auto md:hidden">
+                </div>
+
+                <!-- For large screens -->
+                <div class="self-center place-self-end md:order-1 hidden md:block">
+                    <h3 class="text-5xl font-semibold hidden md:block">Goalphin <span
+                            class="gradient-text">Course</span></h3>
+                    <ul class="my-10 space-y-5">
+                        <li class="flex gap-3 items-center">
+                            <img src="assets/learn-icon.png" alt="Learn icon" class="size-8">
+                            <span>Lorem-ipsum</span>
+                        </li>
+                        <li class="flex gap-3 items-center">
+                            <img src="assets/Online-learning-icon.png" alt="Online learning icon" class="size-8">
+                            <span>Online learning</span>
+                        </li>
+                        <li class="flex gap-3 items-center">
+                            <img src="assets/Analysis-icon.png" alt="Analysis Icon" class="size-8">
+                            <span>Course Analysis</span>
+                        </li>
+                        <li class="flex gap-3 items-center">
+                            <img src="assets/Report-icon.png" alt="Report Icon" class="size-8">
+                            <span>Course Reports</span>
+                        </li>
+                    </ul>
+
+                    <!-- Slide indicator for Large screens -->
+                    <div class="hidden md:flex">
+                        <div class="tag-chap bg-gradient-to-t from-[#48A693] to-[#79D7A5] after:bg-[#79D7A5]">
+                        </div>
+                        <div class="tag-chap bg-gradient-to-t from-[#48A693] to-[#79D7A5] after:bg-[#e1e1e1]">
+                        </div>
+                        <div class="tag-chap bg-[#E1E1E1] after:bg-[#e1e1e1]">
+                        </div>
+                        <div class="size-5 me-14 bg-[#E1E1E1] rounded-full">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- For small screens -->
+                <p class="max-w-lg flex mt-3 mb-10 md:hidden text-center md:text-left order-2 md:order-1">Lorem ipsum
+                    dolor sit
+                    amet, consectetur
+                    adipiscing elit. Lectus
+                    scelerisque
+                    amet, fermentum
+                    tellus pellentesque metus,
+                    eleifend. Ullamcorper interdum tellus turpis aliquam amet sit posuere. Ullamcorper nec risus nec
+                    at. Mauris, amet,
+                    quisque risus, tellus. Nisl, nullam sit id malesuada amet, ultrices odio. to Nunc laoreet
+                    vulputate at enim.</p>
+
+                <!-- Slide indicator for Small screens -->
+                <div class="flex md:hidden justify-center gap-3 order-3">
+                    <div class="w-14 h-0.5 bg-[#48A693]">
+                    </div>
+                    <div class="w-14 h-0.5 bg-[#E1E1E1]">
+                    </div>
+                    <div class="w-14 h-0.5 bg-[#E1E1E1]">
+                    </div>
+                    <div class="w-14 h-0.5 bg-[#E1E1E1]">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide three -->
+            <div class="grid md:grid-cols-2">
+                <div class="self-center place-self-end order-2 md:order-1">
+                    <h3 class="text-5xl font-semibold hidden md:block">Goalphin <span
+                            class="gradient-text">Bootcamp</span></h3>
+                    <p class="max-w-lg flex mt-3 mb-10 text-center md:text-left">Lorem ipsum
+                        dolor sit
+                        amet, consectetur
+                        adipiscing elit. Lectus
+                        scelerisque
+                        amet, fermentum
+                        tellus pellentesque metus,
+                        eleifend. Ullamcorper interdum tellus turpis aliquam amet sit posuere. Ullamcorper nec risus nec
+                        at. Mauris, amet,
+                        quisque risus, tellus. Nisl, nullam sit id malesuada amet, ultrices odio. to Nunc laoreet
+                        vulputate at enim.</p>
+
+                    <!-- Slide indicator for Small screens -->
+                    <div class="flex md:hidden justify-center gap-3">
+                        <div class="w-14 h-0.5 bg-[#48A693]">
+                        </div>
+                        <div class="w-14 h-0.5 bg-[#E1E1E1]">
+                        </div>
+                        <div class="w-14 h-0.5 bg-[#E1E1E1]">
+                        </div>
+                        <div class="w-14 h-0.5 bg-[#E1E1E1]">
+                        </div>
+                    </div>
+
+                    <!-- Slide indicator for Large screens -->
+                    <div class="hidden md:flex">
+                        <div class="tag-chap bg-gradient-to-t from-[#48A693] to-[#79D7A5] after:bg-[#e1e1e1]">
+                        </div>
+                        <div class="tag-chap bg-[#E1E1E1] after:bg-[#e1e1e1]">
+                        </div>
+                        <div class="tag-chap bg-[#E1E1E1] after:bg-[#e1e1e1]">
+                        </div>
+                        <div class="size-5 me-14 bg-[#E1E1E1] rounded-full">
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <h3 class="text-3xl md:text-5xl font-semibold md:hidden text-center">Goalphin <span
+                            class="gradient-text">Bootcamp</span></h3>
+                    <img src="assets/Group 5.png" alt="Laptop icon"
+                        class="size-96 mx-auto object-contain hidden md:block">
+                    <img src="assets/girl and boy working together.png" alt="Girl and Boy Working Together"
+                        class="mx-auto md:hidden my-5">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Divider -->
+        <div class="max-w-6xl mx-auto px-4 md:px-10 my-10">
+            <hr class="border">
+        </div>
+
+        <!-- Golphin -->
+        <h3 class="text-3xl md:text-5xl text-[#7EBEA1] text-center font-semibold">Golphin</h3>
+
+        <!-- Footer -->
+        <footer
+            class="grid grid-cols-3 gap-5 mt-10 bg-[#EEEEEE] container mx-auto px-4 py-5 md:px-10 md:py-10 md:grid-cols-5 md:justify-items-center md:gap-0">
+            <div class="space-y-1 md:space-y-3 col-span-3">
+                <h4 class="text-xl md:text-3xl text-[#878787] font-semibold">Golphin</h4>
+                <span class="text-sm text-[#00000099]">Follow us</span>
+                <ul class="flex gap-3">
+                    <li>
+                        <a href="#">
+                            <img src="assets/Facebook.png" alt="Facebook" class="size-7">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/Instagram.png" alt="Instagram" class="size-7">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/Twitter.png" alt="Twitter" class="size-7">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/Linkedin.png" alt="Linkedin" class="size-7">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <dl class="space-y-1.5">
+                <dt class="text-lg md:text-2xl font-semibold">Products</dt>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">Goalphin Metaversity
+                </dd>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">Goalphin Courses
+                </dd>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">Goalphin Bootcamps
+                </dd>
+            </dl>
+            <dl class="space-y-1.5">
+                <dt class="text-lg md:text-2xl font-semibold">Company</dt>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">About</dd>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">Features</dd>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">Blog</dd>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">We're Hiring</dd>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">Frequently asked
+                </dd>
+            </dl>
+            <dl class="space-y-1.5">
+                <dt class="text-lg md:text-2xl font-semibold">Legal</dt>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">Privacy Policy</dd>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">Terms & Conditions
+                </dd>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">License Agreement
+                </dd>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">Support Center</dd>
+            </dl>
+            <dl class="space-y-1.5">
+                <dt class="text-lg md:text-2xl font-semibold">Contact</dt>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">hi@goalphin.com</dd>
+                <dd class="text-[#00000099] text-xs md:text-sm cursor-pointer hover:text-[#7EBEA1]">+91-00-000-0000</dd>
+            </dl>
+        </footer>
+        <div class="bg-white w-full container mx-auto px-4 md:px-10 py-3 flex justify-between items-center">
+            <span class="text-[.65rem] md:text-base text-[#00000099]">© 2022 Goalphin All right reserved</span>
+            <div class="flex items-center gap-1">
+                <span class="text-[.65rem] md:text-base text-[#00000099] cursor-pointer">Language English (IN)</span>
+                <i class="fa-solid fa-chevron-down fa-2xs"></i>
+                <button class="active:scale-95 duration-300">
+                    <img src="assets/chat-bot.png" alt="Chat Bot" class="size-12 ms-4">
+                </button>
+            </div>
+        </div>
+
+    </body>
+
+</html>
